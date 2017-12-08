@@ -1,0 +1,22 @@
+[package]
+name = "reader"
+version = "0.1.0"
+authors = ["rascul <rascul3@gmail.com>"]
+
+[dependencies]
+chrono = "0.3"
+handlebars-iron = "0.23"
+iron = "0.5"
+logger = "0.3"
+mount = "0.3"
+params = "0.6"
+persistent = "0.3"
+router = "0.5"
+serde = "0.9"
+serde_derive = "0.9"
+staticfile = "0.4"
+toml = "0.3"
+
+[features]
+default = ["handlebars-iron/serde_type"]
+watch = ["handlebars-iron/watch"]
